@@ -55,8 +55,6 @@ class Encrypter implements EncrypterContract
     {
         $length = mb_strlen($key, '8bit');
 
-var_dump($key);
-echo $cipher;
         return ($cipher === 'AES-128-CBC' && $length === 16) ||
                ($cipher === 'AES-256-CBC' && $length === 32);
     }
